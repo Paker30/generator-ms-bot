@@ -1,0 +1,43 @@
+{
+  "name": "generator-paco",
+  "version": "1.0.0",
+  "description": "My first generator",
+  "main": "/generators/app/index.js",
+  "files": [
+    "generators"
+  ],
+  "scripts": {
+    "cm": "git cz",
+    "commitmsg": "validate-commit-msg",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'release major version' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'release minor version' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'release patch version' && npm version patch && git push origin && git push origin --tags",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@raspberrypi:Fran/generator-paco.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Paco",
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^2.0.1"
+  },
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "generate-changelog": "^1.7.0",
+    "husky": "^0.14.3",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
