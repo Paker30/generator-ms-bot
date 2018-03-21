@@ -1,0 +1,22 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.1",
+  "description": "This is the begining of a great bot",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index",
+    "start:dev": "nodemon --inspect ./src/index",
+    "test": "lab -c"
+  },
+  "author": "<%= author %>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "botbuilder": "^3.14.0",
+    "restify": "^6.3.4"
+  },
+  "devDependencies": {
+    "code": "^5.2.0",
+    "lab": "^15.3.1",
+    "nodemon": "^1.17.2"
+  }
+}
