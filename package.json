@@ -1,5 +1,5 @@
 {
-  "name": "generator-paco",
+  "name": "generator-ms-bot",
   "version": "1.0.0",
   "description": "My first generator",
   "main": "/generators/app/index.js",
