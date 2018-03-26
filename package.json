@@ -1,5 +1,5 @@
 {
-  "name": "@username/generator-ms-bot",
+  "name": "generator-ms-bot",
   "version": "1.1.0",
   "description": "My first generator",
   "main": "/generators/app/index.js",
