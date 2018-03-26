@@ -1,5 +1,5 @@
 {
-  "name": "generator-ms-bot",
+  "name": "@username/generator-ms-bot",
   "version": "1.1.0",
   "description": "My first generator",
   "main": "/generators/app/index.js",
@@ -21,7 +21,7 @@
   "keywords": [
     "yeoman-generator"
   ],
-  "author": "Paco",
+  "author": "paker",
   "license": "ISC",
   "dependencies": {
     "yeoman-generator": "^2.0.1"
