@@ -6,6 +6,10 @@ module.exports = class extends Generator {
     super(args, opts);
 
     this.writingBot = (answers) => {
+      const DockerFiles = [
+        { origin: 'Dockerfile', destination: 'Dockerfile', variables: { author: answers.author } },
+        { origin: '.dockerignore', destination: '.dockerignore', variables: {} },
+      ];
       const BotFileTree = [
         {
           origin: 'package.json',
@@ -20,7 +24,7 @@ module.exports = class extends Generator {
         { origin: 'src/index.js', destination: 'src/index.js', variables: {} },
         { origin: 'src/server.js', destination: 'src/server.js', variables: {} },
       ];
-      return BotFileTree;
+      return answers.dockerize ? [...BotFileTree, ...DockerFiles] : BotFileTree;
     };
   }
 
@@ -35,6 +39,28 @@ module.exports = class extends Generator {
       type: 'input',
       name: 'author',
       message: 'Who is the author of this awesome bot?',
+    },
+    {
+      type: 'expand',
+      name: 'dockerize',
+      message: 'Do you want to dockerize your bot? (y/N)',
+      choices: [
+        {
+          key: 'y',
+          name: 'dockerize',
+          value: true,
+        },
+        {
+          key: 'n',
+          name: 'no dockerize',
+          value: false,
+        },
+      ],
+      default: {
+        key: 'n',
+        name: 'no dockerize',
+        value: false,
+      },
     }])
       .then((answers) => { this.answers = answers; });
   }
