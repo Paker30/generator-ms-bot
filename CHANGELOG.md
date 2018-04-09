@@ -1,3 +1,17 @@
+### 1.4.0 (2018-04-09)
+
+##### Chores
+
+* **README.md:**  Update readme file ([25cfa8d9](git@raspberrypi:Fran/generator-paco.git/commit/25cfa8d9343cbaad837d33e38b9e8a6db4231d19))
+
+##### New Features
+
+*  Add the option to dockerize the bot ([dfbaa5c8](git@raspberrypi:Fran/generator-paco.git/commit/dfbaa5c8778d7f351d86803700e7f64f752faeb9))
+
+##### Tests
+
+*  Add test to docker option ([a201b807](git@raspberrypi:Fran/generator-paco.git/commit/a201b807aa450e51b81ad0b8748a57a4b2a55300))
+
 ### 1.3.0 (2018-04-09)
 
 ### 1.2.0 (2018-04-09)
