@@ -1,6 +1,7 @@
 # generator-ms-bot
 `generator-ms-bot` creates the example nodejs [Microsoft Bot](https://docs.microsoft.com/en-us/azure/bot-service/nodejs/bot-builder-nodejs-quickstart)
 [![Build Status](https://travis-ci.org/Paker30/generator-ms-bot.svg?branch=master)](https://travis-ci.org/Paker30/generator-ms-bot)
+[![codecov](https://codecov.io/gh/Paker30/generator-ms-bot/branch/master/graph/badge.svg)](https://codecov.io/gh/Paker30/generator-ms-bot)
 
 The bot is ready to work with the Bot Framework Emulator, just start it and talk to it.
 It also gives you the option to dockerize your bot.
