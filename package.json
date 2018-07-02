@@ -12,7 +12,8 @@
     "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'chore: release major version' && npm version major && git push origin && git push origin --tags",
     "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'chore: release minor version' && npm version minor && git push origin && git push origin --tags",
     "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'chore: release patch version' && npm version patch && git push origin && git push origin --tags",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
